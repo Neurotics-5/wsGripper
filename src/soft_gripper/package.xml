@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>soft_gripper</name>
+  <version>0.0.0</version>
+  <description>Soft gripper control package (Python node)</description>
+  <maintainer email="your_email@example.com">felix</maintainer>
+  <license>Apache License 2.0</license>
+
+  <!-- Build tools -->
+  <buildtool_depend>ament_python</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Build dependencies (for actions) -->
+  <build_depend>rosidl_default_generators</build_depend>
+
+  <!-- Runtime dependencies -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>example_interfaces</exec_depend>
+  <exec_depend>action_msgs</exec_depend>
+  <exec_depend>builtin_interfaces</exec_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  
+  <!-- Interface generation group -->
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_python</build_type>
+    <rosidl_generate_interfaces/>
+  </export>
+</package>
+
+
+

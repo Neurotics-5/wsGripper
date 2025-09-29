@@ -1,0 +1,793 @@
+<robot name="URDF">
+    <material name="white_nylon"><color rgba="1.0 1.0 1.0 1.0" /></material><link name="main_housing">
+        <inertial>
+            <origin xyz="-0.06498069007999605 0.04156497382801675 0.0185366332349843" rpy="0.0 -0.0 0.0" />
+            <mass value="2.1359580147040425" />
+            <inertia ixx="0.003689811441674805" iyy="0.005220869244233217" izz="0.008065718013979553" ixy="4.614554376906584e-05" iyz="-0.0002778309934325909" ixz="4.284125486984886e-06" />
+        </inertial>
+        <visual name="main_housing_visual">
+            <origin xyz="-0.11765018000000003 -0.019000000000000045 0.010000000000000005" rpy="0.0 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/main_housing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="main_housing_collision">
+            <origin xyz="-0.11765018000000003 -0.019000000000000045 0.010000000000000005" rpy="0.0 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/main_housing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="motor_mount">
+        <inertial>
+            <origin xyz="0.04714476246246596 0.04291296602302067 -0.006515361533439599" rpy="0.0 -0.0 0.0" />
+            <mass value="1.0969740639934207" />
+            <inertia ixx="0.0016178785301482557" iyy="0.0016152568670021444" izz="0.0031816363021280373" ixy="2.6389696437234387e-06" iyz="-1.0236979949334517e-05" ixz="-6.376420888160805e-07" />
+        </inertial>
+        <visual name="motor_mount_visual">
+            <origin xyz="-0.005000000000000027 0.08600000000000005 0.03599999999999999" rpy="3.141592653589793 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/motor_mount.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="motor_mount_collision">
+            <origin xyz="-0.005000000000000027 0.08600000000000005 0.03599999999999999" rpy="3.141592653589793 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/motor_mount.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="jetson_clamp">
+        <inertial>
+            <origin xyz="-0.030000000000020306 0.00041388104404918916 -0.017450177577564042" rpy="0.0 -0.0 0.0" />
+            <mass value="0.18943157410821526" />
+            <inertia ixx="1.9784015157741828e-05" iyy="0.0001244680203030208" izz="0.00010715348737438317" ixy="-1.5753683901339205e-18" iyz="-2.35345637609693e-08" ixz="3.440800884062443e-17" />
+        </inertial>
+        <visual name="jetson_clamp_visual">
+            <origin xyz="-0.08199999999999998 -0.08600000000000002 -0.040999999999999995" rpy="0.0 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/jetson_clamp.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="jetson_clamp_collision">
+            <origin xyz="-0.08199999999999998 -0.08600000000000002 -0.040999999999999995" rpy="0.0 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/jetson_clamp.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="camera_cover_2">
+        <inertial>
+            <origin xyz="0.007862553276360807 -0.017978498636894255 0.009221209112893033" rpy="0.0 -0.0 0.0" />
+            <mass value="0.04162329590700502" />
+            <inertia ixx="1.1080745026072745e-05" iyy="4.5445913448851575e-06" izz="1.3848537660793363e-05" ixy="3.987738066778567e-09" iyz="2.6074654870583814e-09" ixz="5.117172324141351e-07" />
+        </inertial>
+        <visual name="camera_cover_2_visual">
+            <origin xyz="-0.10200000000000001 -0.06350000000000004 -0.046" rpy="0.0 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/camera_cover_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="camera_cover_2_collision">
+            <origin xyz="-0.10200000000000001 -0.06350000000000004 -0.046" rpy="0.0 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/camera_cover_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="cable_cover_1">
+        <inertial>
+            <origin xyz="0.06275945351745642 0.011149665542192828 -0.019115236627273016" rpy="0.0 -0.0 0.0" />
+            <mass value="0.12061737850024641" />
+            <inertia ixx="3.992621964223563e-05" iyy="0.00018252391341126695" izz="0.00018533994793659258" ixy="7.1893715772743135e-12" iyz="-6.153945027850957e-06" ixz="-5.0242640264839035e-11" />
+        </inertial>
+        <visual name="cable_cover_1_visual">
+            <origin xyz="0.01075941999999995 0.010698370000000033 0.04599999999999998" rpy="3.141592653589793 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/cable_cover_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="cable_cover_1_collision">
+            <origin xyz="0.01075941999999995 0.010698370000000033 0.04599999999999998" rpy="3.141592653589793 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/cable_cover_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="camera_cover_1">
+        <inertial>
+            <origin xyz="-0.007857696933831705 0.018000000018938443 -0.009218035612254968" rpy="0.0 -0.0 0.0" />
+            <mass value="0.04166870392652819" />
+            <inertia ixx="1.1099393810887312e-05" iyy="4.546482910601827e-06" izz="1.3867101906983294e-05" ixy="-3.0980006682720147e-14" iyz="5.417027104693987e-16" ixz="5.111289304996272e-07" />
+        </inertial>
+        <visual name="camera_cover_1_visual">
+            <origin xyz="-0.0020000000000000287 0.06350000000000006 0.046" rpy="3.141592653589793 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/camera_cover_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="camera_cover_1_collision">
+            <origin xyz="-0.0020000000000000287 0.06350000000000006 0.046" rpy="3.141592653589793 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/camera_cover_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="cable_cover_2">
+        <inertial>
+            <origin xyz="0.06275942685439072 -0.011149673027746365 -0.01911523767999533" rpy="0.0 -0.0 0.0" />
+            <mass value="0.12061737110747833" />
+            <inertia ixx="3.992608824989071e-05" iyy="0.00018252386760867054" izz="0.0001853397751278507" ixy="4.551342445983728e-11" iyz="6.153960499094384e-06" ixz="-1.0474292386288253e-11" />
+        </inertial>
+        <visual name="cable_cover_2_visual">
+            <origin xyz="0.01075941999999997 0.08030163000000005 0.046" rpy="3.141592653589793 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/cable_cover_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="cable_cover_2_collision">
+            <origin xyz="0.01075941999999997 0.08030163000000005 0.046" rpy="3.141592653589793 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/cable_cover_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="camera_link">
+        <inertial>
+            <origin xyz="-1.3095036633109992e-14 -0.005100368501430728 -0.010280500778937105" rpy="0.0 -0.0 0.0" />
+            <mass value="0.16748363879759612" />
+            <inertia ixx="1.5616627381714486e-05" iyy="6.485046656176175e-05" izz="6.0775006141113334e-05" ixy="1.3005627783717361e-17" iyz="-3.397184853043281e-06" ixz="8.77361095879039e-18" />
+        </inertial>
+        <visual name="camera_link_visual">
+            <origin xyz="-0.05200000000000286 -0.028999999999999988 0.11050000000000088" rpy="-1.5707963267948966 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/camera_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="camera_link_collision">
+            <origin xyz="-0.05200000000000286 -0.028999999999999988 0.11050000000000088" rpy="-1.5707963267948966 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/camera_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="housing_cover">
+        <inertial>
+            <origin xyz="-0.05475449415521548 0.0001674757856527087 -0.0008606153983236808" rpy="0.0 -0.0 0.0" />
+            <mass value="0.11541824986287083" />
+            <inertia ixx="1.0764883758771263e-05" iyy="0.00016412038191154115" izz="0.00017313334995158514" ixy="3.1715668483183714e-11" iyz="6.707680155077227e-07" ixz="-2.567969404792423e-12" />
+        </inertial>
+        <visual name="housing_cover_visual">
+            <origin xyz="-0.10675448000000003 0.025999999999999992 -4.4408920985006264e-17" rpy="1.5707963267948966 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/housing_cover.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="housing_cover_collision">
+            <origin xyz="-0.10675448000000003 0.025999999999999992 -4.4408920985006264e-17" rpy="1.5707963267948966 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/housing_cover.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="base_link">
+        <inertial>
+            <origin xyz="2.854765250842527e-12 6.784362970066172e-12 0.005777848836336764" rpy="0.0 0.0 0.0" />
+            <mass value="1.6075587405059442" />
+            <inertia ixx="0.0017903670051976986" iyy="0.0029228466319732305" izz="0.004639798398247289" ixy="1.3319656321458122e-13" iyz="3.0303368251489393e-15" ixz="1.2701516150277892e-15" />
+        </inertial>
+        <visual name="base_link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="base_link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="motor_simple-v2">
+        <inertial>
+            <origin xyz="0.010999999999975701 -0.02050505956666867 0.016976849691165165" rpy="0.0 -0.0 0.0" />
+            <mass value="0.35913166569674887" />
+            <inertia ixx="0.00010037327997386393" iyy="6.066191219035851e-05" izz="8.649991238078971e-05" ixy="-1.1188966420050406e-16" iyz="-9.556903790783615e-08" ixz="3.0770589391380596e-17" />
+        </inertial>
+        <visual name="motor_simple-v2_visual">
+            <origin xyz="0.02524999999999998 0.003250000000106228 0.034000000000000044" rpy="-1.5707963267948983 -1.1102230246251501e-16 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/motor_simple-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="motor_simple-v2_collision">
+            <origin xyz="0.02524999999999998 0.003250000000106228 0.034000000000000044" rpy="-1.5707963267948983 -1.1102230246251501e-16 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/motor_simple-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="motor_simple-v2-1">
+        <inertial>
+            <origin xyz="-0.011000000000024173 0.020505059566668617 -0.016976849691165256" rpy="0.0 -0.0 0.0" />
+            <mass value="0.35913166569674887" />
+            <inertia ixx="0.00010037327997386436" iyy="6.0661912190355987e-05" izz="8.649991238079144e-05" ixy="1.111307226797642e-16" iyz="-9.556903790734191e-08" ixz="-3.096089015728974e-17" />
+        </inertial>
+        <visual name="motor_simple-v2-1_visual">
+            <origin xyz="0.0032500000000001573 -0.003250000000106228 -0.034000000000000204" rpy="1.5707963267948937 1.665334536937719e-16 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/motor_simple-v2-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="motor_simple-v2-1_collision">
+            <origin xyz="0.0032500000000001573 -0.003250000000106228 -0.034000000000000204" rpy="1.5707963267948937 1.665334536937719e-16 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/motor_simple-v2-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="hinge_servo-v6">
+        <inertial>
+            <origin xyz="-2.7959856652159943e-14 0.012097148698020989 -0.0014702272596331767" rpy="0.0 4.861730685829017e-63 0.0" />
+            <mass value="0.033742310022972066" />
+            <inertia ixx="3.524768145216138e-06" iyy="2.77368736335617e-06" izz="6.111680971280066e-06" ixy="-8.131516293641283e-18" iyz="-1.6012084431267731e-07" ixz="-3.9641141931501256e-19" />
+        </inertial>
+        <visual name="hinge_servo-v6_visual">
+            <origin xyz="-7.993605777301127e-17 -1.0611955758577097e-13 2.4424906541753444e-17" rpy="-4.3611210464447495e-31 6.661338147750929e-16 2.449293598294711e-16" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_servo-v6.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="hinge_servo-v6_collision">
+            <origin xyz="-7.993605777301127e-17 -1.0611955758577097e-13 2.4424906541753444e-17" rpy="-4.3611210464447495e-31 6.661338147750929e-16 2.449293598294711e-16" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_servo-v6.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="motor_simple-v2-2">
+        <inertial>
+            <origin xyz="-0.012750000000024398 -0.021073150308834793 0.14475505956666873" rpy="0.0 -0.0 0.0" />
+            <mass value="0.35913166569674887" />
+            <inertia ixx="0.0001003732799738661" iyy="8.649991238078754e-05" izz="6.066191219035851e-05" ixy="3.170444321572846e-17" iyz="9.556903790867641e-08" ixz="1.1275702593849246e-16" />
+        </inertial>
+        <visual name="motor_simple-v2-2_visual">
+            <origin xyz="0.0014999999999998571 -0.004049999999999991 0.12099999999989387" rpy="7.964830597633548e-31 3.673940397442067e-16 -3.1415926535897913" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/motor_simple-v2-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="motor_simple-v2-2_collision">
+            <origin xyz="0.0014999999999998571 -0.004049999999999991 0.12099999999989387" rpy="7.964830597633548e-31 3.673940397442067e-16 -3.1415926535897913" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/motor_simple-v2-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="hinge_servo_idle-v2">
+        <inertial>
+            <origin xyz="-0.026999999999873583 -0.05489102552894295 0.11463435453787346" rpy="0.0 -0.0 0.0" />
+            <mass value="0.04346032509879134" />
+            <inertia ixx="4.142405674727916e-06" iyy="7.675009208116105e-06" izz="4.015723082760851e-06" ixy="3.7947076036992655e-18" iyz="-6.364162520702864e-08" ixz="5.827586677109586e-17" />
+        </inertial>
+        <visual name="hinge_servo_idle-v2_visual">
+            <origin xyz="-0.027000000000000128 -0.052049999999999985 0.10199999999989386" rpy="1.5707963267948966 3.6739403974420663e-16 -3.1415926535897927" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_servo_idle-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="hinge_servo_idle-v2_collision">
+            <origin xyz="-0.027000000000000128 -0.052049999999999985 0.10199999999989386" rpy="1.5707963267948966 3.6739403974420663e-16 -3.1415926535897927" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_servo_idle-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="hinge_servo_idle-v2-1">
+        <inertial>
+            <origin xyz="-0.0014999999998734027 -0.05489102552894292 0.11463435453787342" rpy="0.0 -0.0 0.0" />
+            <mass value="0.04346032509879134" />
+            <inertia ixx="4.1424056747278075e-06" iyy="7.675009208115888e-06" izz="4.015723082760844e-06" ixy="3.8014838672773e-18" iyz="-6.36416252070422e-08" ixz="5.828941929825193e-17" />
+        </inertial>
+        <visual name="hinge_servo_idle-v2-1_visual">
+            <origin xyz="-0.0014999999999999504 -0.052049999999999964 0.1019999999998938" rpy="1.5707963267948966 1.224646799147353e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_servo_idle-v2-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="hinge_servo_idle-v2-1_collision">
+            <origin xyz="-0.0014999999999999504 -0.052049999999999964 0.1019999999998938" rpy="1.5707963267948966 1.224646799147353e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_servo_idle-v2-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="motor_simple-v2-3">
+        <inertial>
+            <origin xyz="0.03474999999997581 -0.021073150308834717 0.14475505956666865" rpy="0.0 -0.0 0.0" />
+            <mass value="0.35913166569674887" />
+            <inertia ixx="0.00010037327997386783" iyy="8.649991238079101e-05" izz="6.066191219035864e-05" ixy="3.113068427308208e-17" iyz="9.556903790860017e-08" ixz="1.1232334506949826e-16" />
+        </inertial>
+        <visual name="motor_simple-v2-3_visual">
+            <origin xyz="0.04900000000000006 -0.004049999999999927 0.1209999999998938" rpy="1.3931710890908336e-30 1.224646799147353e-16 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/motor_simple-v2-3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="motor_simple-v2-3_collision">
+            <origin xyz="0.04900000000000006 -0.004049999999999927 0.1209999999998938" rpy="1.3931710890908336e-30 1.224646799147353e-16 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/motor_simple-v2-3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="hinge_servo-v6-1">
+        <inertial>
+            <origin xyz="-2.7822188997106422e-14 0.012097148698020898 -0.00147022725963327" rpy="0.0 -0.0 0.0" />
+            <mass value="0.033742310022972066" />
+            <inertia ixx="3.5247681452159753e-06" iyy="2.7736873633561835e-06" izz="6.111680971280012e-06" ixy="-8.17217387510949e-18" iyz="-1.601208443126502e-07" ixz="-4.0318768289304696e-19" />
+        </inertial>
+        <visual name="hinge_servo-v6-1_visual">
+            <origin xyz="5.329070518200751e-17 -1.0620837542774097e-13 -6.661338147750939e-17" rpy="-1.3931710890908336e-30 -1.192767672690443e-30 -2.4651903288163275e-32" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_servo-v6-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="hinge_servo-v6-1_collision">
+            <origin xyz="5.329070518200751e-17 -1.0620837542774097e-13 -6.661338147750939e-17" rpy="-1.3931710890908336e-30 -1.192767672690443e-30 -2.4651903288163275e-32" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_servo-v6-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="hinge_finger_idle-v21">
+        <inertial>
+            <origin xyz="-0.051799999999880345 -0.04984738014011419 0.1803041425814172" rpy="0.0 -0.0 0.0" />
+            <mass value="0.0238081034809524" />
+            <inertia ixx="4.039917988877791e-06" iyy="4.777529898602941e-06" izz="8.184412898238639e-07" ixy="5.64123942871364e-19" iyz="-6.220717361225033e-08" ixz="3.923456611681919e-17" />
+        </inertial>
+        <visual name="hinge_finger_idle-v21_visual">
+            <origin xyz="-0.05180000000000083 -0.04804999999999986 0.16624999999989373" rpy="1.5707963267948943 6.123233995736764e-16 -3.1415926535897927" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_finger_idle-v21.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="hinge_finger_idle-v21_collision">
+            <origin xyz="-0.05180000000000083 -0.04804999999999986 0.16624999999989373" rpy="1.5707963267948943 6.123233995736764e-16 -3.1415926535897927" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_finger_idle-v21.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="hinge_finger-v21">
+        <inertial>
+            <origin xyz="-3.1468161409975437e-14 0.013953238529449657 -0.0015786327621384456" rpy="0.0 -0.0 0.0" />
+            <mass value="0.027220258874124357" />
+            <inertia ixx="4.804622824006741e-06" iyy="8.696890805635121e-07" izz="5.550218612262623e-06" ixy="-1.0137290312739466e-17" iyz="-1.4964277006405025e-07" ixz="-3.032377951170395e-19" />
+        </inertial>
+        <visual name="hinge_finger-v21_visual">
+            <origin xyz="5.329070518200751e-17 -1.0620837542774097e-13 -6.661338147750939e-17" rpy="-1.3931710890918227e-30 -2.72157012301249e-29 2.449293598294706e-16" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_finger-v21.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="hinge_finger-v21_collision">
+            <origin xyz="5.329070518200751e-17 -1.0620837542774097e-13 -6.661338147750939e-17" rpy="-1.3931710890918227e-30 -2.72157012301249e-29 2.449293598294706e-16" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_finger-v21.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="hinge_finger_idle-v21-1">
+        <inertial>
+            <origin xyz="0.029700000000119856 -0.04984738014011406 0.18030414258141722" rpy="0.0 -0.0 0.0" />
+            <mass value="0.0238081034809524" />
+            <inertia ixx="4.039917988878008e-06" iyy="4.7775298986032664e-06" izz="8.184412898238571e-07" ixy="5.675120746603812e-19" iyz="-6.220717361225033e-08" ixz="3.926167117113133e-17" />
+        </inertial>
+        <visual name="hinge_finger_idle-v21-1_visual">
+            <origin xyz="0.02969999999999936 -0.04804999999999973 0.1662499999998938" rpy="1.5707963267948943 3.673940397442062e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_finger_idle-v21-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="hinge_finger_idle-v21-1_collision">
+            <origin xyz="0.02969999999999936 -0.04804999999999973 0.1662499999998938" rpy="1.5707963267948943 3.673940397442062e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_finger_idle-v21-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="hinge_finger-v21-1">
+        <inertial>
+            <origin xyz="-3.169908779909747e-14 0.013953238529449727 -0.0015786327621383478" rpy="0.0 -0.0 0.0" />
+            <mass value="0.027220258874124357" />
+            <inertia ixx="4.804622824006958e-06" iyy="8.696890805635121e-07" izz="5.55021861226284e-06" ixy="-1.0123737785583398e-17" iyz="-1.4964277006405025e-07" ixz="-3.066259269060567e-19" />
+        </inertial>
+        <visual name="hinge_finger-v21-1_visual">
+            <origin xyz="-1.7763568394002506e-16 -1.0613732115416497e-13 3.1086244689504386e-17" rpy="-4.948235054248297e-31 6.6613381477507795e-16 4.89858719658942e-16" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_finger-v21-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="hinge_finger-v21-1_collision">
+            <origin xyz="-1.7763568394002506e-16 -1.0613732115416497e-13 3.1086244689504386e-17" rpy="-4.948235054248297e-31 6.6613381477507795e-16 4.89858719658942e-16" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/hinge_finger-v21-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="sensor_connector-v79">
+        <inertial>
+            <origin xyz="-0.018900007238659908 -0.023049999999994384 0.19398487831504327" rpy="0.0 -0.0 0.0" />
+            <mass value="0.10281690019670692" />
+            <inertia ixx="3.5618255693771125e-05" iyy="2.3887736837416816e-05" izz="1.8325945445775466e-05" ixy="9.133529800463519e-19" iyz="-7.794820697107699e-19" ixz="2.1801886152675656e-06" />
+        </inertial>
+        <visual name="sensor_connector-v79_visual">
+            <origin xyz="-0.015750000000000187 -0.011999999999999917 0.2172499999998939" rpy="-1.5707963267948961 1.4191546488686791e-15 -1.570796326794896" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/sensor_connector-v79.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="sensor_connector-v79_collision">
+            <origin xyz="-0.015750000000000187 -0.011999999999999917 0.2172499999998939" rpy="-1.5707963267948961 1.4191546488686791e-15 -1.570796326794896" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/sensor_connector-v79.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="sensor_connector-v79-1">
+        <inertial>
+            <origin xyz="0.018900007238659745 -0.02305000000000544 0.19398487831504319" rpy="0.0 -0.0 0.0" />
+            <mass value="0.10281690019670692" />
+            <inertia ixx="3.5618255693771125e-05" iyy="2.388773683741855e-05" izz="1.8325945445775486e-05" ixy="8.758453023507474e-19" iyz="8.976431658527448e-19" ixz="-2.180188615267674e-06" />
+        </inertial>
+        <visual name="sensor_connector-v79-1_visual">
+            <origin xyz="0.015749999999999993 -0.03409999999999992 0.21724999999989375" rpy="-1.570796326794897 -8.881784197001247e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/sensor_connector-v79-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="sensor_connector-v79-1_collision">
+            <origin xyz="0.015749999999999993 -0.03409999999999992 0.21724999999989375" rpy="-1.570796326794897 -8.881784197001247e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/sensor_connector-v79-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="sensor_base-v53">
+        <inertial>
+            <origin xyz="0.00265984933398312 0.01150110831956805 0.014527386737134726" rpy="0.0 -0.0 0.0" />
+            <mass value="0.008830801300927454" />
+            <inertia ixx="2.543899379476416e-06" iyy="1.722794300981008e-06" izz="9.168321341904731e-07" ixy="-4.330580862270804e-09" iyz="2.3888480914732505e-08" ixz="9.97084163879022e-09" />
+        </inertial>
+        <visual name="sensor_base-v53_visual">
+            <origin xyz="0.0057000000000000115 0.012000000000000136 0.019249999999893817" rpy="-1.570796326794897 -8.881784197001248e-16 1.5707963267948968" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/sensor_base-v53.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="sensor_base-v53_collision">
+            <origin xyz="0.0057000000000000115 0.012000000000000136 0.019249999999893817" rpy="-1.570796326794897 -8.881784197001248e-16 1.5707963267948968" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/sensor_base-v53.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="sensor_base-v53-1">
+        <inertial>
+            <origin xyz="-0.0026598493339832973 0.012498891680432144 0.014527386737134726" rpy="0.0 -0.0 0.0" />
+            <mass value="0.008830801300927454" />
+            <inertia ixx="2.543899379476417e-06" iyy="1.722794300981008e-06" izz="9.16832134190475e-07" ixy="-4.330580862269918e-09" iyz="-2.3888480914730814e-08" ixz="-9.970841638797e-09" />
+        </inertial>
+        <visual name="sensor_base-v53-1_visual">
+            <origin xyz="-0.005700000000000185 0.012000000000000047 0.019249999999893817" rpy="-1.5707963267948961 1.419154648868679e-15 -1.5707963267948954" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/sensor_base-v53-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="sensor_base-v53-1_collision">
+            <origin xyz="-0.005700000000000185 0.012000000000000047 0.019249999999893817" rpy="-1.5707963267948961 1.419154648868679e-15 -1.5707963267948954" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/sensor_base-v53-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="sensor_shell_v3-v35">
+        <inertial>
+            <origin xyz="0.005550792874894861 -0.010750000000110537 -0.01652342500144375" rpy="0.0 -0.0 0.0" />
+            <mass value="0.0316881520307166" />
+            <inertia ixx="7.4929256351683425e-06" iyy="5.532563195049774e-06" izz="2.9859012144997427e-06" ixy="-1.5929516673023636e-17" iyz="7.995620445166171e-18" ixz="7.558554972096284e-08" />
+        </inertial>
+        <visual name="sensor_shell_v3-v35_visual">
+            <origin xyz="0.0019999999999998396 -7.327471962526034e-17 1.0622613899613499e-13" rpy="-1.570796326794897 1.2966899689539438e-15 -1.5707963267948974" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/sensor_shell_v3-v35.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="sensor_shell_v3-v35_collision">
+            <origin xyz="0.0019999999999998396 -7.327471962526034e-17 1.0622613899613499e-13" rpy="-1.570796326794897 1.2966899689539438e-15 -1.5707963267948974" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/sensor_shell_v3-v35.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="sensor_shell_v3-v35-1">
+        <inertial>
+            <origin xyz="-0.00555079287489513 0.010750000000110387 -0.016523425001443853" rpy="0.0 -0.0 0.0" />
+            <mass value="0.0316881520307166" />
+            <inertia ixx="7.492925635168558e-06" iyy="5.532563195049991e-06" izz="2.9859012144997906e-06" ixy="-1.5921258101787903e-17" iyz="-7.954645226342743e-18" ixz="-7.558554972094927e-08" />
+        </inertial>
+        <visual name="sensor_shell_v3-v35-1_visual">
+            <origin xyz="-0.002000000000000073 -7.327471962526034e-17 1.0611955758577097e-13" rpy="-1.5707963267948963 -1.01064309961486e-15 1.5707963267948963" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/sensor_shell_v3-v35-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="sensor_shell_v3-v35-1_collision">
+            <origin xyz="-0.002000000000000073 -7.327471962526034e-17 1.0611955758577097e-13" rpy="-1.5707963267948963 -1.01064309961486e-15 1.5707963267948963" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/sensor_shell_v3-v35-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="silicon_tip-v1">
+        <inertial>
+            <origin xyz="0.008643874094177235 6.423939490395395e-09 -0.00318271510888376" rpy="0.0 -0.0 0.0" />
+            <mass value="0.055939025066378587" />
+            <inertia ixx="5.4776451999698705e-06" iyy="5.302191369042572e-06" izz="3.997394100619268e-06" ixy="-2.441054045215703e-12" iyz="-9.13272811719704e-14" ixz="1.1064797279538804e-06" />
+        </inertial>
+        <visual name="silicon_tip-v1_visual">
+            <origin xyz="-1.0619061185934697e-13 0.010750000018250256 -0.013707843258350855" rpy="-1.570796326794897 -1.7531121916738964e-16 -1.5707963267948957" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/silicon_tip-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="silicon_tip-v1_collision">
+            <origin xyz="-1.0619061185934697e-13 0.010750000018250256 -0.013707843258350855" rpy="-1.570796326794897 -1.7531121916738964e-16 -1.5707963267948957" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/silicon_tip-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="silicon_tip-v1-1">
+        <inertial>
+            <origin xyz="0.008643874094177271 -6.423939501410889e-09 -0.006017284891116544" rpy="0.0 -0.0 0.0" />
+            <mass value="0.055939025066378587" />
+            <inertia ixx="5.477645199969859e-06" iyy="5.302191369042138e-06" izz="3.997394100619701e-06" ixy="2.441054058450593e-12" iyz="-9.132728492075293e-14" ixz="-1.1064797279539346e-06" />
+        </inertial>
+        <visual name="silicon_tip-v1-1_visual">
+            <origin xyz="-1.0615508472255896e-13 -0.01075000001825031 0.004507843258350572" rpy="1.5707963267948981 -6.491393309164016e-16 1.570796326794898" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/silicon_tip-v1-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="silicon_tip-v1-1_collision">
+            <origin xyz="-1.0615508472255896e-13 -0.01075000001825031 0.004507843258350572" rpy="1.5707963267948981 -6.491393309164016e-16 1.570796326794898" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/silicon_tip-v1-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="black_gel_new-v5">
+        <inertial>
+            <origin xyz="0.014249999999893924 5.976989736478089e-17 -0.0018635966535490648" rpy="0.0 -0.0 0.0" />
+            <mass value="0.0007700994432039112" />
+            <inertia ixx="4.862487557955659e-08" iyy="7.643313431267453e-08" izz="1.2436317872587682e-07" ixy="3.110199103199384e-22" iyz="-4.493594054208967e-23" ixz="-2.6469779601696915e-23" />
+        </inertial>
+        <visual name="black_gel_new-v5_visual">
+            <origin xyz="0.014249999999894918 -7.495393195000588e-16 -0.0019999999999998457" rpy="8.341765016872616e-16 -4.286263797015726e-16 -2.1308664706412056e-15" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/black_gel_new-v5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="black_gel_new-v5_collision">
+            <origin xyz="0.014249999999894918 -7.495393195000588e-16 -0.0019999999999998457" rpy="8.341765016872616e-16 -4.286263797015726e-16 -2.1308664706412056e-15" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/black_gel_new-v5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="black_gel_new-v5-1">
+        <inertial>
+            <origin xyz="0.014249999999893924 6.54164222790854e-17 0.001863596653549293" rpy="0.0 -0.0 0.0" />
+            <mass value="0.0007700994432039112" />
+            <inertia ixx="4.862487557955658e-08" iyy="7.643313431267453e-08" izz="1.2436317872587682e-07" ixy="-2.2499312661442353e-22" iyz="-1.5076659133486043e-23" ixz="-1.3234889800848443e-23" />
+        </inertial>
+        <visual name="black_gel_new-v5-1_visual">
+            <origin xyz="0.014249999999894918 8.74812375317724e-16 0.0020000000000000738" rpy="-3.141592653589793 -4.286263797018941e-16 -1.0106430998224172e-15" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/black_gel_new-v5-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="black_gel_new-v5-1_collision">
+            <origin xyz="0.014249999999894918 8.74812375317724e-16 0.0020000000000000738" rpy="-3.141592653589793 -4.286263797018941e-16 -1.0106430998224172e-15" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/black_gel_new-v5-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="D435_Solid-v2">
+        <inertial>
+            <origin xyz="-0.021387631051720826 -2.7969539090761942e-05 0.012450337454895957" rpy="0.0 -0.0 0.0" />
+            <mass value="0.35928853728306875" />
+            <inertia ixx="3.257844840842943e-05" iyy="0.00021892457710509234" izz="0.00021659474897241064" ixy="-1.1006348351996537e-08" iyz="5.779561108995232e-08" ixz="3.2204266787050153e-06" />
+        </inertial>
+        <visual name="D435_Solid-v2_visual">
+            <origin xyz="-0.022499999999999402 -1.758593271006248e-15 0.025050000000000017" rpy="3.002818968148797e-16 1.4814801226269541e-31 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/D435_Solid-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        <material name="white_nylon" /></visual>
+        <collision name="D435_Solid-v2_collision">
+            <origin xyz="-0.022499999999999402 -1.758593271006248e-15 0.025050000000000017" rpy="3.002818968148797e-16 1.4814801226269541e-31 0.0" />
+            <geometry>
+                <mesh filename="package://soft_gripper/URDF/meshes/D435_Solid-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="base_link_Rigid-5" type="fixed">
+        <origin xyz="0.06565018 -0.0265 0.013999999999999999" rpy="0.0 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="main_housing" />
+    </joint>
+    <joint name="main_housing_Rigid-6" type="fixed">
+        <origin xyz="-0.010895700000000001 -0.019 0.036000000000000004" rpy="-1.5707963267948966 -0.0 0.0" />
+        <parent link="main_housing" />
+        <child link="housing_cover" />
+    </joint>
+    <joint name="main_housing_Rigid-7" type="fixed">
+        <origin xyz="-0.11265018000000002 0.06699999999999999 0.046" rpy="3.141592653589793 -0.0 0.0" />
+        <parent link="main_housing" />
+        <child link="motor_mount" />
+    </joint>
+    <joint name="main_housing_Rigid-8" type="fixed">
+        <origin xyz="-0.06565018 0.09150000000000001 0.039" rpy="1.5707963267948966 -0.0 0.0" />
+        <parent link="main_housing" />
+        <child link="camera_link" />
+    </joint>
+    <joint name="motor_mount_Rigid-9" type="fixed">
+        <origin xyz="0.077 0.0 -0.005" rpy="3.141592653589793 -0.0 0.0" />
+        <parent link="motor_mount" />
+        <child link="jetson_clamp" />
+    </joint>
+    <joint name="motor_mount_Rigid-10" type="fixed">
+        <origin xyz="-0.0029999999999999983 0.0225 -0.01" rpy="0.0 -0.0 0.0" />
+        <parent link="motor_mount" />
+        <child link="camera_cover_1" />
+    </joint>
+    <joint name="motor_mount_Rigid-11" type="fixed">
+        <origin xyz="0.09699999999999999 0.0225 -0.01" rpy="3.141592653589793 -0.0 0.0" />
+        <parent link="motor_mount" />
+        <child link="camera_cover_2" />
+    </joint>
+    <joint name="motor_mount_Rigid-12" type="fixed">
+        <origin xyz="-0.015759419999999996 0.005698369999999997 -0.01" rpy="0.0 -0.0 0.0" />
+        <parent link="motor_mount" />
+        <child link="cable_cover_2" />
+    </joint>
+    <joint name="motor_mount_Rigid-13" type="fixed">
+        <origin xyz="-0.015759419999999996 0.07530163 -0.01" rpy="0.0 -0.0 0.0" />
+        <parent link="motor_mount" />
+        <child link="cable_cover_1" />
+    </joint>
+    <joint name="motor_mount_Rigid-14" type="fixed">
+        <origin xyz="0.08175 0.05755 -0.013250000000000001" rpy="-1.5707963267948966 -0.0 0.0" />
+        <parent link="motor_mount" />
+        <child link="motor_simple-v2-1" />
+    </joint>
+    <joint name="motor_mount_Rigid-15" type="fixed">
+        <origin xyz="0.01225 0.05755 -0.013250000000000001" rpy="1.5707963267948966 -0.0 0.0" />
+        <parent link="motor_mount" />
+        <child link="motor_simple-v2" />
+    </joint>
+    <joint name="hinge_servo-v6-1_Rigid-18" type="fixed">
+        <origin xyz="-0.03475 -0.10325000000000001 -0.0020500000000000006" rpy="-1.5707963267948966 -9.476314858925413e-33 0.0" />
+        <parent link="hinge_servo-v6-1" />
+        <child link="motor_simple-v2-3" />
+    </joint>
+    <joint name="hinge_servo-v6_Rigid-19" type="fixed">
+        <origin xyz="0.01275 -0.10325000000000001 -0.0020500000000000006" rpy="-1.5707963267948966 5.596516932297671e-33 2.465190328815662e-32" />
+        <parent link="hinge_servo-v6" />
+        <child link="motor_simple-v2-2" />
+    </joint>
+    <joint name="motor_simple-v2-3_Rigid-20" type="fixed">
+        <origin xyz="0.03625 0.012999999999999998 0.00125" rpy="0.0 -0.0 0.0" />
+        <parent link="motor_simple-v2-3" />
+        <child link="hinge_servo_idle-v2-1" />
+    </joint>
+    <joint name="motor_simple-v2-2_Rigid-21" type="fixed">
+        <origin xyz="0.01425 0.012999999999999998 0.00125" rpy="0.0 -0.0 0.0" />
+        <parent link="motor_simple-v2-2" />
+        <child link="hinge_servo_idle-v2" />
+    </joint>
+    <joint name="motor_simple-v2_Revolute-22" type="continuous">
+        <origin xyz="0.011000000000000001 -0.032 0.036000000000000004" rpy="3.141592653589793 5.596516932297671e-33 2.465190328815662e-32" />
+        <parent link="motor_simple-v2" />
+        <child link="hinge_servo-v6" />
+        <axis xyz="-5.596516932297671e-33 1.9721522630525295e-31 -1.0" />
+    </joint>
+    <joint name="motor_simple-v2-1_Revolute-23" type="continuous">
+        <origin xyz="-0.010999999999999975 0.032 -0.036000000000000004" rpy="0.0 9.476314858925413e-33 0.0" />
+        <parent link="motor_simple-v2-1" />
+        <child link="hinge_servo-v6-1" />
+        <axis xyz="9.476314858925413e-33 0.0 -1.0" />
+    </joint>
+    <joint name="motor_simple-v2-2_Revolute-24" type="continuous">
+        <origin xyz="-0.01275 -0.0020500000000000006 0.15625" rpy="1.5707963267948966 -0.0 -4.8170997357650804e-32" />
+        <parent link="motor_simple-v2-2" />
+        <child link="hinge_finger-v21-1" />
+        <axis xyz="-4.8170997357650804e-32 -2.465190328815662e-32 -1.0" />
+    </joint>
+    <joint name="motor_simple-v2-3_Revolute-25" type="continuous">
+        <origin xyz="0.03475 -0.0020500000000000006 0.15625" rpy="1.5707963267948966 -0.0 4.548056548630036e-48" />
+        <parent link="motor_simple-v2-3" />
+        <child link="hinge_finger-v21" />
+        <axis xyz="4.548056548630036e-48 0.0 -1.0" />
+    </joint>
+    <joint name="hinge_finger-v21_Rigid-26" type="fixed">
+        <origin xyz="-0.02375 -0.15625 -0.004049999999999998" rpy="-1.5707963267948966 -4.548056548630036e-48 0.0" />
+        <parent link="hinge_finger-v21" />
+        <child link="sensor_connector-v79-1" />
+    </joint>
+    <joint name="hinge_finger-v21-1_Rigid-27" type="fixed">
+        <origin xyz="0.02375 -0.15625 -0.004049999999999998" rpy="-1.5707963267948966 4.8170997357650804e-32 0.0" />
+        <parent link="hinge_finger-v21-1" />
+        <child link="sensor_connector-v79" />
+    </joint>
+    <joint name="sensor_connector-v79_Rigid-28" type="fixed">
+        <origin xyz="0.028050000000000002 0.007000000000000002 -0.01" rpy="0.0 -0.0 0.0" />
+        <parent link="sensor_connector-v79" />
+        <child link="hinge_finger_idle-v21" />
+    </joint>
+    <joint name="sensor_connector-v79-1_Rigid-29" type="fixed">
+        <origin xyz="-0.0059499999999999996 0.007000000000000002 -0.01" rpy="0.0 -0.0 0.0" />
+        <parent link="sensor_connector-v79-1" />
+        <child link="hinge_finger_idle-v21-1" />
+    </joint>
+    <joint name="sensor_connector-v79_Rigid-30" type="fixed">
+        <origin xyz="-0.02775 -0.03505 0.18325" rpy="0.0 -4.444724221904288e-32 0.0" />
+        <parent link="sensor_connector-v79" />
+        <child link="sensor_base-v53-1" />
+    </joint>
+    <joint name="sensor_connector-v79-1_Rigid-31" type="fixed">
+        <origin xyz="0.02775 -0.03505 0.18325" rpy="1.97215226305253e-31 -0.0 0.0" />
+        <parent link="sensor_connector-v79-1" />
+        <child link="sensor_base-v53" />
+    </joint>
+    <joint name="sensor_connector-v79_Rigid-32" type="fixed">
+        <origin xyz="-0.01575 -0.0338 0.18895" rpy="3.141592653589793 -4.444724221904288e-32 0.0" />
+        <parent link="sensor_connector-v79" />
+        <child link="sensor_shell_v3-v35" />
+    </joint>
+    <joint name="sensor_connector-v79-1_Rigid-33" type="fixed">
+        <origin xyz="0.01575 -0.012299999999999998 0.18895" rpy="-3.141592653589793 -0.0 0.0" />
+        <parent link="sensor_connector-v79-1" />
+        <child link="sensor_shell_v3-v35-1" />
+    </joint>
+    <joint name="sensor_shell_v3-v35_Rigid-34" type="fixed">
+        <origin xyz="0.013199999999999998 -0.010750000000000003 0.0" rpy="-3.141592653589793 1.5707963267948966 0" />
+        <parent link="sensor_shell_v3-v35" />
+        <child link="black_gel_new-v5" />
+    </joint>
+    <joint name="sensor_shell_v3-v35-1_Rigid-35" type="fixed">
+        <origin xyz="-0.013200000000000003 0.01075 0.0" rpy="-3.141592653589793 1.5707963267948966 0" />
+        <parent link="sensor_shell_v3-v35-1" />
+        <child link="black_gel_new-v5-1" />
+    </joint>
+    <joint name="sensor_shell_v3-v35_Rigid-36" type="fixed">
+        <origin xyz="0.0112 -0.010750000000000003 -0.030500000000000006" rpy="-0.0 1.5707963267948966 0" />
+        <parent link="sensor_shell_v3-v35" />
+        <child link="silicon_tip-v1-1" />
+    </joint>
+    <joint name="sensor_shell_v3-v35-1_Rigid-37" type="fixed">
+        <origin xyz="-0.0020000000000000018 0.01075 -0.030500000000000006" rpy="4.829907568021203e-64 1.5707963267948966 0" />
+        <parent link="sensor_shell_v3-v35-1" />
+        <child link="silicon_tip-v1" />
+    </joint>
+    <joint name="camera_link_Rigid-38" type="fixed">
+        <origin xyz="0.02250000000000064 -0.007000000000000002 -0.025" rpy="-1.5707963267948966 -0.0 0.0" />
+        <parent link="camera_link" />
+        <child link="D435_Solid-v2" />
+    </joint>
+</robot>
